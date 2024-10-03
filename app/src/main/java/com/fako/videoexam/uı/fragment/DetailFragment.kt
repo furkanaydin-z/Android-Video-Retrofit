@@ -24,7 +24,7 @@ class DetailFragment : Fragment() {
     ): View? {
         binding = FragmentDetailBinding.inflate(inflater,container,false)
 
-        val backPress = object : OnBackPressedCallback(true) { // true ile geri tuşunu etkinleştiriyoruz
+        val backPress = object : OnBackPressedCallback(true) {
             override fun handleOnBackPressed() {
                 findNavController().popBackStack()
             }

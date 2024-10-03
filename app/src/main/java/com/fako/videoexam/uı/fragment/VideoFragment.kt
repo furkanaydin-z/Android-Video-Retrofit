@@ -23,7 +23,7 @@ class VideoFragment : Fragment() {
     ): View? {
         binding = FragmentVideoBinding.inflate(inflater,container,false)
 
-        val backPress = object : OnBackPressedCallback(true) { // true ile geri tuşunu etkinleştiriyoruz
+        val backPress = object : OnBackPressedCallback(true) {
             override fun handleOnBackPressed() {
                 findNavController().popBackStack()
             }
@@ -43,7 +43,6 @@ class VideoFragment : Fragment() {
 
         val videoUri: Uri = Uri.parse("android.resource://" + requireContext().packageName + "/" + R.raw.androidd)
 
-        // VideoView'e URI'yi ayarla
         binding.videoView2.setVideoURI(videoUri)
 
         // Medya denetleyiciyi ayarla (play, pause, stop gibi işlemler için)
@@ -51,7 +50,6 @@ class VideoFragment : Fragment() {
         binding.videoView2.setMediaController(mediaController)
         mediaController.setAnchorView(binding.videoView2)
 
-        // Videoyu başlat
         binding.videoView2.start()
 
 
