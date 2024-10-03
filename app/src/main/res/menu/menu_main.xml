@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.fako.videoexam.MainActivity">
+    <item
+        android:id="@+id/menuItem1"
+        android:icon="@drawable/premium_menu"
+        android:title="Premium"
+         />
+
+    <item
+        android:id="@+id/menuItem2"
+        android:icon="@drawable/out_menu"
+        android:title="Log Out"
+         />
+</menu>
