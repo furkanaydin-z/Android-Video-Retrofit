@@ -18,7 +18,7 @@ class MovieDataSource {
 
         return@withContext md.bringMovies().filmler
     }
-
+//deactivated
    suspend fun ara(aramaKelimesi:String) {
         Log.e("tag",aramaKelimesi)
     }
